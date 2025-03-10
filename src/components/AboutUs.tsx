@@ -67,7 +67,7 @@ export default function AboutUs() {
                 </div>
                 <div className="col-span-1 md:col-span-2 flex justify-end">
                     <Link href="#Contato">
-                        <PrimaryButton className="w-full max-w-64">Vamos conversar!</PrimaryButton>
+                        <PrimaryButton className="w-full max-w-64">Vamos conversar</PrimaryButton>
                     </Link>
                 </div>
             </div>

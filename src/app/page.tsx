@@ -5,7 +5,7 @@ import Navbar from "@/components/layout/Navbar";
 import Partners from "@/components/Partners";
 import Process from "@/components/Process";
 import Teachers from "@/components/Teachers";
-
+//teste
 export default function Home() {
   return (
     <div className="min-h-screen flex flex-col items-center gap-16">

@@ -1,9 +1,12 @@
 import React from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
+import { MdOutlineEmail } from 'react-icons/md';
+import { FaInstagram } from 'react-icons/fa';
 
 export default function CiclosLandingPage() {
     return (
-        <div className="min-h-screen bg-slate-50 font-sans pb-20">
+        <div className="min-h-screen bg-slate-50 font-sans">
 
             {/* 1. HERO SECTION - Chamada para o Próximo Ciclo */}
             <section className="bg-[#1E284B] text-white py-20 px-6 text-center relative overflow-hidden">
@@ -11,12 +14,23 @@ export default function CiclosLandingPage() {
                 <div className="absolute top-[-50px] left-[-50px] w-64 h-64 bg-[#B83280] rounded-full blur-3xl opacity-20"></div>
                 <div className="absolute bottom-[-50px] right-[-50px] w-64 h-64 bg-blue-500 rounded-full blur-3xl opacity-20"></div>
 
-                <div className="relative z-10 max-w-4xl mx-auto">
+                <div className="relative z-10 max-w-4xl mx-auto flex flex-col items-center">
+
+                    {/* LOGO DA MAMBEE ADICIONADA AQUI */}
+                    <Image
+                        src="/images/mambee-logo-2.png"
+                        alt="Logo Mambee Fábrica e Escola de Software"
+                        width={220}
+                        height={0}
+                        className="mb-8"
+                        priority
+                    />
+
                     <span className="inline-block py-1 px-3 rounded-full bg-[#B83280]/20 text-[#fbcfe8] text-sm font-semibold mb-6 border border-[#B83280]/50">
                         Inscrições Abertas
                     </span>
                     <h1 className="text-4xl md:text-5xl font-bold mb-6 leading-tight">
-                        Traga o seu projeto para a <span className="text-[#B83280]">Fábrica de Software Mambee</span>
+                        Traga o seu projeto para a <span className="text-[#B83280]">Fábrica e Escola de Software Mambee</span>
                     </h1>
                     <p className="text-lg text-slate-300 mb-10 max-w-2xl mx-auto">
                         Estamos recebendo novas demandas! Se você tem uma ideia, um problema que precisa de solução tecnológica ou um projeto em andamento, cadastre-se no nosso novo ciclo.
@@ -165,6 +179,56 @@ export default function CiclosLandingPage() {
                 </section>
 
             </main>
+
+            {/* 4. FOOTER */}
+            <footer className="bg-[#1E284B] text-slate-300 py-12 px-6 mt-20 border-t-4 border-[#B83280]">
+
+                {/* Container reduzido para max-w-4xl para criar margens laterais iguais */}
+                <div className="max-w-4xl mx-auto flex flex-col md:flex-row justify-between items-center md:items-start gap-12 text-center md:text-left">
+
+                    {/* Marca e Endereço */}
+                    <div className="flex flex-col items-center md:items-start">
+                        <Image
+                            src="/images/mambee-logo-3.png"
+                            alt="Logo Mambee"
+                            width={160}
+                            height={0}
+                            className="mb-4 brightness-0 invert opacity-90"
+                        />
+                        <p className="text-sm max-w-sm mb-2 leading-relaxed text-slate-400">
+                            Av Pedro Marques de Medeiros, s/n - Parque Industrial, Picos - PI, 64605-500
+                        </p>
+                        <p className="text-sm max-w-sm leading-relaxed text-slate-400">
+                            IFPI Campus Picos, Sala E5 (Mambee), Pantanal, Picos - PI
+                        </p>
+                    </div>
+
+                    {/* Contatos - Texto e ícones alinhados à esquerda de forma natural */}
+                    <div className="flex flex-col items-center md:items-start md:pt-4">
+                        <h4 className="text-white font-bold mb-4 uppercase tracking-wider text-sm">Contato</h4>
+
+                        <a href="mailto:mambee.fabrica@gmail.com" className="flex items-center gap-3 mb-3 hover:text-[#B83280] transition-colors group">
+                            <span className="w-8 h-8 rounded-full border border-slate-500 flex items-center justify-center group-hover:border-[#B83280]">
+                                <MdOutlineEmail className="text-lg" />
+                            </span>
+                            <span className="text-sm">mambee.fabrica@gmail.com</span>
+                        </a>
+
+                        <a href="https://instagram.com/mambeeifpi" target="_blank" rel="noreferrer" className="flex items-center gap-3 hover:text-[#B83280] transition-colors group">
+                            <span className="w-8 h-8 rounded-full border border-slate-500 flex items-center justify-center group-hover:border-[#B83280]">
+                                <FaInstagram className="text-lg" />
+                            </span>
+                            <span className="text-sm">@mambeeifpi</span>
+                        </a>
+                    </div>
+
+                </div>
+
+                {/* Linha de Copyright Centralizada */}
+                <div className="max-w-4xl mx-auto mt-12 pt-6 border-t border-slate-700/50 flex justify-center items-center text-xs text-slate-500">
+                    <p>Copyright © Mambee {new Date().getFullYear()}</p>
+                </div>
+            </footer>
         </div>
     );
 }

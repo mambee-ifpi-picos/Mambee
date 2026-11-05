@@ -91,7 +91,7 @@ export default function CiclosLandingPage() {
 
                             <div className="flex flex-col sm:flex-row gap-4">
                                 <a
-                                    href={LINK_UNIFICADO}
+                                    href="https://forms.gle/ySVxHmXECafPEc1g9"
                                     target="_blank"
                                     rel="noopener noreferrer"
                                     className="bg-[#1E284B] text-white hover:bg-[#B83280] hover:text-white font-bold py-3 px-6 rounded-lg transition-colors duration-300 text-center shadow-sm"
@@ -194,7 +194,7 @@ export default function CiclosLandingPage() {
                             <h3 className="text-2xl font-bold text-white mb-4">Quer ser parceiro?</h3>
                             <p className="text-slate-300 text-sm mb-6">Toda ajuda é bem-vinda para manter nossos projetos rodando e fomentar o desenvolvimento tecnológico da nossa região.</p>
                             <a
-                                href={LINK_UNIFICADO}
+                                href="https://forms.gle/ySVxHmXECafPEc1g9"
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className="inline-block bg-[#B83280] text-white hover:text-white px-6 py-3 rounded-full font-bold hover:bg-[#972969] transition-colors w-full"

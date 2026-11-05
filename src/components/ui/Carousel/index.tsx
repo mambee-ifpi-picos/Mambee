@@ -9,13 +9,15 @@ import './slick.css';
 
 const defaultSettings: Settings = {
   autoplay: true,
-  autoplaySpeed: 5000,
+  autoplaySpeed: 4000,
   speed: 500,
   infinite: true,
   dots: true,
   arrows: false,
   slidesToShow: 1,
-  slidesToScroll: 1
+  slidesToScroll: 1,
+  pauseOnHover: false,
+  pauseOnFocus: false
 };
 
 interface CarouselProps {
